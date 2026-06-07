@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #000;
+    /* background-image: url(image.png);
+    background-repeat: no-repeat;
+    background-position:top;
+    background-size: cover; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh ;
+
+}
+
+.container {
+    width: 300px;
+    height: 450px;
+    padding: 50px;
+    /* border: 4px solid white; */
+    background-color: #000;
+    border-radius: 30px;
+    background-color: #000;
+    box-shadow: 0px 0px 50px blue;
+
+
+}
+
+
+
+h1 {
+    position: relative;
+    bottom: 20px;
+    margin: 20px;
+    text-align: center;
+    color: white;
+
+
+
+}
+
+.container:hover{
+    animation: animate 1s linear infinite;
+    
+}
+@keyframes animate{
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.email {
+    border: 3px solid white;
+    border-radius: 30px;
+    padding: 20px;
+    position: relative;
+    
+}
+.email label{
+    position: absolute;
+    font-size: 20px;
+    left: 20px;
+    color: white;
+    transition: .4s;
+}
+
+.email input{
+    border: none;
+    background:transparent;
+    font-size: 20px;
+    color: white;
+    outline: none;
+}
+
+.email input:focus+label,
+.email input:valid+label{
+    top: 2px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.pass {
+    margin-top: 12px;
+    border: 3px solid white;
+    border-radius: 30px;
+    padding: 20px;
+    position: relative;
+
+}
+
+.pass label{
+    position: absolute;
+    font-size: 20px;
+    left: 20px;
+    color: white;
+    pointer-events: none;
+    transition: .4s;
+}
+
+.pass input{
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    font-size: 20px;
+
+}
+
+.pass input:focus+label,
+.pass input:valid+label{
+    top: 2px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+.fog{
+    display: flex;
+    justify-content: space-between ;
+
+    margin-top: 25px;
+
+
+}
+
+.fog input{
+    margin-left: 10px;
+    width: 15px;
+    accent-color: white;
+    
+    
+}
+
+.fog label{
+    margin-right: 30px;
+    font-size: 16px;
+    color: white;
+    font-weight: 300;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(250, 249, 249);
+}
+
+strong{
+    cursor: pointer;
+    margin-left: 2px;
+    color: cyan;
+    text-decoration: underline;
+}
+
+
+input{
+    font-size: 20px;
+    border: none;
+    background: none;
+}
+
+button{
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 12px;
+    width: 300px;
+    cursor: pointer;
+    border: none;
+    margin-top: 30px;
+    color: white;
+    background-color: rgba(0, 0, 255, 0.498);
+}
+
+.do{
+    color: white;
+    margin: 35px 30px;
+    
+}
+
+a:hover{
+    color:rgb(231, 227, 13);
+}
+button:hover{
+    background-color: rgba(128, 128, 128, 0.817);
+}
+
+button:active{
+    background-color:  rgba(0, 0, 255, 0.498);
+}
+svg{
+    color: white;
+    position:absolute;   
+    right: 22px;
+}
+
+@media (max-width: 500px){
+    
+    .container{
+        width: 60%;
+        max-height: 70vh;
+    }
+    .email{
+        width: 220px;
+        height: 20px;
+    }
+
+    .email input{
+        width: 200px;
+
+        
+    }
+    .pass{
+        width: 220px;
+        height: 20px;
+
+    }
+
+    .pass input{
+        width: 200px;
+    }
+
+    .fog label{
+        font-size: 11px;
+        font-weight: 800;
+        
+        margin-left: -9px;
+
+    
+    }
+    .fog a{
+        font-size: 11px;
+        font-weight: 800;
+    }
+    .fog input{
+        width: 12px;
+        accent-color: blue;
+    }
+    
+
+    button{
+        width: 260px;
+        text-align: center;
+
+    }
+
+    .do{
+        font-size: 12px;
+        text-align: center;
+        font-weight: 600;
+    }
+
+
+
+
+}
+    
+
+
