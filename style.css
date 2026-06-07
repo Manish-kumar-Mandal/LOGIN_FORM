@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: "Baloo Bhai 2";
 }
 
 body {
@@ -13,7 +15,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh ;
+    min-height: 100vh;
 
 }
 
@@ -43,11 +45,12 @@ h1 {
 
 }
 
-.container:hover{
+.container:hover {
     animation: animate 1s linear infinite;
-    
+
 }
-@keyframes animate{
+
+@keyframes animate {
     100% {
         filter: hue-rotate(360deg);
     }
@@ -58,9 +61,10 @@ h1 {
     border-radius: 30px;
     padding: 20px;
     position: relative;
-    
+
 }
-.email label{
+
+.email label {
     position: absolute;
     font-size: 20px;
     left: 20px;
@@ -68,16 +72,16 @@ h1 {
     transition: .4s;
 }
 
-.email input{
+.email input {
     border: none;
-    background:transparent;
+    background: transparent;
     font-size: 20px;
     color: white;
     outline: none;
 }
 
 .email input:focus+label,
-.email input:valid+label{
+.email input:valid+label {
     top: 2px;
     font-size: 12px;
     font-weight: 600;
@@ -92,7 +96,7 @@ h1 {
 
 }
 
-.pass label{
+.pass label {
     position: absolute;
     font-size: 20px;
     left: 20px;
@@ -101,7 +105,7 @@ h1 {
     transition: .4s;
 }
 
-.pass input{
+.pass input {
     border: none;
     outline: none;
     background: transparent;
@@ -111,57 +115,57 @@ h1 {
 }
 
 .pass input:focus+label,
-.pass input:valid+label{
+.pass input:valid+label {
     top: 2px;
     font-size: 12px;
     font-weight: 600;
 }
 
 
-.fog{
+.fog {
     display: flex;
-    justify-content: space-between ;
+    justify-content: space-between;
 
     margin-top: 25px;
 
 
 }
 
-.fog input{
+.fog input {
     margin-left: 10px;
     width: 15px;
     accent-color: white;
-    
-    
+
+
 }
 
-.fog label{
+.fog label {
     margin-right: 30px;
     font-size: 16px;
     color: white;
     font-weight: 300;
 }
 
-a{
+a {
     text-decoration: none;
     color: rgb(250, 249, 249);
 }
 
-strong{
+strong {
     cursor: pointer;
     margin-left: 2px;
     color: cyan;
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 
 
-input{
+input {
     font-size: 20px;
     border: none;
     background: none;
 }
 
-button{
+button {
     font-size: 20px;
     font-weight: 600;
     border-radius: 8px;
@@ -174,79 +178,85 @@ button{
     background-color: rgba(0, 0, 255, 0.498);
 }
 
-.do{
+.do {
     color: white;
     margin: 35px 30px;
-    
+
 }
 
-a:hover{
-    color:rgb(231, 227, 13);
+a:hover {
+    color: rgb(231, 227, 13);
 }
-button:hover{
+
+button:hover {
     background-color: rgba(128, 128, 128, 0.817);
 }
 
-button:active{
-    background-color:  rgba(0, 0, 255, 0.498);
+button:active {
+    background-color: rgba(0, 0, 255, 0.498);
 }
-svg{
+
+svg {
     color: white;
-    position:absolute;   
+    position: absolute;
     right: 22px;
 }
 
-@media (max-width: 500px){
-    
-    .container{
+@media (max-width: 500px) {
+
+    .container {
         width: 60%;
         max-height: 70vh;
     }
-    .email{
+
+    .email {
         width: 220px;
         height: 20px;
     }
 
-    .email input{
+    .email input {
         width: 200px;
 
-        
+
     }
-    .pass{
+
+    .pass {
         width: 220px;
         height: 20px;
 
     }
 
-    .pass input{
+    .pass input {
         width: 200px;
     }
 
-    .fog label{
+    .fog label {
         font-size: 11px;
         font-weight: 800;
-        
+
         margin-left: -9px;
 
-    
+
     }
-    .fog a{
+
+    .fog a {
         font-size: 11px;
         font-weight: 800;
     }
-    .fog input{
+
+    .fog input {
         width: 12px;
         accent-color: blue;
     }
-    
 
-    button{
+
+    button {
         width: 260px;
         text-align: center;
 
     }
 
-    .do{
+    .do {
         font-size: 12px;
         text-align: center;
         font-weight: 600;
@@ -256,6 +266,3 @@ svg{
 
 
 }
-    
-
-
