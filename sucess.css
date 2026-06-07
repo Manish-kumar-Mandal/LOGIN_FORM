@@ -60,10 +60,11 @@ strong{
     cursor: pointer;
     margin-left: 7px;
     color: cyan;
-    text-decoration: underline;
+    font-size: 17px;
+    /* text-decoration: underline; */
 }
 
-@media (max-width: 500px){
+@media (max-width: 520px){
     .container{
         width: 60%;
         max-height: 60vh;
