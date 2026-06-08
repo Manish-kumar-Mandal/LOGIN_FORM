@@ -65,6 +65,9 @@ strong{
 }
 
 @media (max-width: 520px){
+    body{
+        overflow: hidden;
+    }
     .container{
         width: 60%;
         max-height: 60vh;
